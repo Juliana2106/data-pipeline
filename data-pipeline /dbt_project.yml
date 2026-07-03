@@ -1,4 +1,4 @@
-name: 'propelus_analytics'
+name: 'data_pipeline'
 version: '1.0.0'
 config-version: 2
 
@@ -16,5 +16,5 @@ clean-targets:
   - "dbt_packages"
 
 models:
-  propelus_analytics:
-    materialized: view
+  data_pipeline:
+    +materialized: view
