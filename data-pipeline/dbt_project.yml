@@ -17,4 +17,7 @@ clean-targets:
 
 models:
   data_pipeline:
-    +materialized: view
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
